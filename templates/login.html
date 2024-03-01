@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Login</h1>
+
+<form action="/login" method="POST">
+    <label for="uname">Username :</label><input type="text" name="uname" id="uname"><br><br>
+    <label for="pswrd">Password :</label><input type="password" name="pswrd" id="pswrd"><br><br>
+    <input type="submit" value="Log in">
+</form>
+
+{% if err %}
+<p><strong>ERROR:</strong>{{ err }}</p>
+{% endif %}
+
+</body>
+</html>
